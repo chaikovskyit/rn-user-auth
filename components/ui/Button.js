@@ -5,7 +5,7 @@ import { Colors } from "../../constants/styles";
 function Button({ children, onPress }) {
   return (
     <Pressable
-       style={({ pressed }) => [styles.button, pressed && styles.pressed]}
+      style={({ pressed }) => [styles.button, pressed && styles.pressed]}
       onPress={onPress}
     >
       <View>
@@ -20,6 +20,8 @@ export default Button;
 const styles = StyleSheet.create({
   button: {
     borderRadius: 6,
+    borderWidth: 2,
+    borderColor: Colors.primary100,
     paddingVertical: 6,
     paddingHorizontal: 12,
     backgroundColor: Colors.primary500,
